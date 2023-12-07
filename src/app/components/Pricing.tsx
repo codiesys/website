@@ -54,14 +54,14 @@ const Pricing = () => {
                   />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  React Js Developer
+                  React JS Developer
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
-                    Unlimited Bandwitch
+                    1-3 years of experience with React JS
                   </li>
                   <li className="relative check custom-list my-2">
-                    Encrypted Connection
+                    Good knowledge of HTML CSS
                   </li>
                   <li className="relative check custom-list my-2">
                     No Traffic Logs
@@ -173,14 +173,13 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto"
             >
-              Huge Global Network of Fast VPN{" "}
+              Trusted by clients all across the globe.
             </motion.h3>
             <motion.p
               className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12"
               variants={scrollAnimation}
             >
-              See Codiesys Software PVT LTD everywhere to make it easier for you
-              when you move locations.
+              We have engineers working for clients in all time zones. We provide at least 4 hours of overlapping working hours for client across globe.
             </motion.p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
@@ -189,39 +188,6 @@ const Pricing = () => {
               variants={scrollAnimation}
             >
               <Image alt="Logo" src={Maps} className="w-full h-auto" />
-            </motion.div>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper>
-            <motion.div
-              className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap"
-              variants={scrollAnimation}
-            >
-              {/* <Netflix className="h-18 w-auto" /> */}
-              <img
-                src="/assets/Icon/amazon.png"
-                className="h-14 w-auto mt-4 lg:mt-2"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/netflix.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/reddit.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/discord.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/spotify.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
             </motion.div>
           </ScrollAnimationWrapper>
         </div>
@@ -251,9 +217,9 @@ const Pricing = () => {
               <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
                   <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                    Subscribe Now for <br /> Get Special Features!
+                    Connect with us to explore endless possibilities!
                   </h5>
-                  <p>Let's subscribe with us and find the fun.</p>
+                  <p>Let's discuss your requirements and how team Codiesys can help you achieve your goals.</p>
                 </div>
                 <ButtonPrimary>Contact US</ButtonPrimary>
               </div>

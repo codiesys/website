@@ -13,9 +13,8 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
           <Image alt="Logo" src={LogoVPN} className="h-8 w-auto mb-6" />
           <p className="mb-4">
-            <strong className="font-medium">Codiesys Software PVT LTD</strong>{" "}
-            is a private virtual network that has unique features and has high
-            security.
+            <strong className="font-medium">Codiesys Softwares PVT LTD</strong>{" "}
+            is a software solutions and cyber security company based in Pune, India.
           </p>
           <div className="flex w-full mt-2 mb-8 -mx-2">
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
@@ -29,7 +28,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="text-gray-400">
-            ©{new Date().getFullYear()} - Codiesys Software PVT LTD
+            ©{new Date().getFullYear()} - Codiesys Softwares PVT LTD
           </p>
         </div>
 

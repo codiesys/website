@@ -5,10 +5,10 @@ import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const features = [
-  "Powerfull online protection.",
-  "Internet without borders.",
-  "Supercharged VPN",
-  "No specific time limits.",
+  "Mobile or Web app development.",
+  "Hire our engineers on contract position.",
+  "Architecture and designing.",
+  "Cyber security for your IT infra.",
 ];
 
 const Feature = () => {
@@ -38,11 +38,10 @@ const Feature = () => {
             variants={scrollAnimation}
           >
             <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-              We Provide Many Services You Can Use
+              We can help you with
             </h3>
             <p className="my-2 text-black-500">
-              You can explore the features that we provide with fun and have
-              their own functions each feature.
+              Explore our wide range of services with team that you can trust and rely on.
             </p>
             <ul className="text-black-500 self-start list-inside ml-8">
               {features.map((feature, index) => (

@@ -8,18 +8,18 @@ import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 const Hero = ({
   listUser = [
     {
-      name: "Users",
-      number: "390",
+      name: "Happy Clients",
+      number: "10",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
-      name: "Locations",
-      number: "20",
+      name: "Countries",
+      number: "3",
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
-      name: "Server",
-      number: "50",
+      name: "Projects",
+      number: "20",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
   ],
@@ -35,14 +35,12 @@ const Hero = ({
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              Want anything to be easy with{" "}
-              <strong>Codiesys Software PVT LTD</strong>.
+              Your reliable IT partner with secure solutions at core.
             </h1>
             <p className="text-black-500 mt-4 mb-6">
-              Provide a network for all your needs with ease and fun using
-              Codiesys Software PVT LTD discover interesting features from us.
+              With secure and scalable solutions from Codiesys, bring the tranquility to your product and team.
             </p>
-            <ButtonPrimary>Get Started</ButtonPrimary>
+            <ButtonPrimary>Get In Touch</ButtonPrimary>
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>

@@ -36,14 +36,14 @@ const Feature = () => {
             <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
               We can help you with
             </h3>
-            <p className="my-2 text-black-500">
+            <p className="my-6 text-black-500">
               Explore our wide range of services with team that you can trust
               and rely on.
             </p>
-            <ul className="text-black-500 self-start list-inside ml-8 pl-6">
+            <ul className="text-black-500 self-start list-inside ml-8 pl-6 my-3">
               {features.map((feature, index) => (
                 <li
-                  className="relative circle-check custom-list pt-4"
+                  className="relative circle-check custom-list pt-4 my-4"
                   key={feature}
                 >
                   {feature}

@@ -2,7 +2,6 @@ import Image from "next/image";
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const features = [
   "Mobile or Web app development.",
@@ -20,8 +19,8 @@ const Feature = () => {
       id="services"
     >
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
-        <ScrollAnimationWrapper className="flex w-full justify-end">
-          <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
+        <div className="flex w-full justify-end">
+          <div className="h-full w-full p-4">
             <Image
               src="/assets/Illustration2.png"
               alt="VPN Illustrasi"
@@ -30,39 +29,29 @@ const Feature = () => {
               height={414}
               width={508}
             />
-          </motion.div>
-        </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper>
-          <motion.div
-            className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12"
-            variants={scrollAnimation}
-          >
+          </div>
+        </div>
+        <div>
+          <div className="flex flex-col items-start justify-center ml-auto w-full lg:w-9/12">
             <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
               We can help you with
             </h3>
             <p className="my-2 text-black-500">
-              Explore our wide range of services with team that you can trust and rely on.
+              Explore our wide range of services with team that you can trust
+              and rely on.
             </p>
-            <ul className="text-black-500 self-start list-inside ml-8">
+            <ul className="text-black-500 self-start list-inside ml-8 pl-6">
               {features.map((feature, index) => (
-                <motion.li
-                  className="relative circle-check custom-list"
-                  custom={{ duration: 2 + index }}
-                  variants={scrollAnimation}
+                <li
+                  className="relative circle-check custom-list pt-4"
                   key={feature}
-                  whileHover={{
-                    scale: 1.1,
-                    transition: {
-                      duration: 0.2,
-                    },
-                  }}
                 >
                   {feature}
-                </motion.li>
+                </li>
               ))}
             </ul>
-          </motion.div>
-        </ScrollAnimationWrapper>
+          </div>
+        </div>
       </div>
     </div>
   );

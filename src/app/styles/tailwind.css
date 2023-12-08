@@ -8,6 +8,7 @@ html {
 }
 body {
   @apply bg-white-500;
+
 }
 p {
   @apply text-black-500;
@@ -33,7 +34,6 @@ li.custom-list:before {
   width: 0.4em;
   height: 1em;
   background-repeat: no-repeat;
-
   background-size: 0.4em 0.7em;
   background-position: 0 0.3em;
   font-size: 300%;
@@ -43,7 +43,7 @@ li.custom-list:before {
 li.circle-check:before {
   background-image: url("/assets/Icon/checklist.svg");
   left: -0.7em;
-  top: -0.4em;
+  top: -0.1em;
 }
 li.check:before {
   left: -0.5em;

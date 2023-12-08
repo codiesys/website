@@ -7,9 +7,10 @@ import Maps from "../../../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
+import Link from "next/link";
 
 const Pricing = () => {
-  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+  // const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
     <div
@@ -18,36 +19,24 @@ const Pricing = () => {
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
-          <ScrollAnimationWrapper>
-            <motion.h3
-              variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
-            >
-              Current Open Positions
-            </motion.h3>
-            <motion.p
-              variants={scrollAnimation}
-              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-            >
-              Grow your career as we grow. Join the team that's changing IT
-              services
-            </motion.p>
-          </ScrollAnimationWrapper>
+          {/* <ScrollAnimationWrapper> */}
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed">
+            Current Open Positions
+          </h3>
+          <p className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center">
+            Grow your career as we grow. Join the team that's changing IT
+            services
+          </p>
+          {/* </ScrollAnimationWrapper> */}
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
+            <div className="flex justify-center">
+              <div
+                // variants={scrollAnimation}
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: 0.2,
-                  },
-                }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/react.png"
+                    src="/assets/react1.png"
                     width={145}
                     height={165}
                     alt="Free Plan"
@@ -58,37 +47,31 @@ const Pricing = () => {
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
-                    1-3 years of experience with React JS
+                    0-3 years of experience with React JS
                   </li>
                   <li className="relative check custom-list my-2">
-                    Good knowledge of HTML CSS
+                    Building reusable & Responsive component using React
                   </li>
                   <li className="relative check custom-list my-2">
-                    No Traffic Logs
+                    Redux, Redux toolkit, Context API
                   </li>
                   <li className="relative check custom-list my-2">
-                    Works on All Devices
+                    Good knowledge of Javascript, Typescript, HTML, CSS
                   </li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <ButtonOutline>Apply</ButtonOutline>
                 </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div
+                // variants={scrollAnimation}
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: 0.2,
-                  },
-                }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/rn.png"
+                    src="/assets/rn.webp"
                     width={145}
                     height={165}
                     alt="Standard Plan"
@@ -97,49 +80,44 @@ const Pricing = () => {
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
                   React Navtive Developer
                 </p>
+
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
-                    Unlimited Bandwitch
+                    0-3 years of experience with React Native
                   </li>
                   <li className="relative check custom-list my-2">
-                    Encrypted Connection
+                    Building reusable & Responsive component using React
                   </li>
                   <li className="relative check custom-list my-2">
-                    No Traffic Logs
+                    Redux, Redux toolkit, Context API
                   </li>
                   <li className="relative check custom-list my-2">
-                    Works on All Devices
+                    Javascript, Typescript
                   </li>
                   <li className="relative check custom-list my-2">
-                    Connect Anyware{" "}
+                    Knowledge on handling platform(android/IOS) specific code
                   </li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <ButtonOutline>Apply</ButtonOutline>
                 </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div
+                // variants={scrollAnimation}
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: 0.2,
-                  },
-                }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/go.png"
+                    src="/assets/go.jpg"
                     width={145}
                     height={165}
                     alt="Standard Plan"
                   />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Backend Developer
+                  Golang Developer
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
@@ -161,74 +139,82 @@ const Pricing = () => {
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <ButtonOutline>Apply</ButtonOutline>
                 </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full my-16">
-          <ScrollAnimationWrapper>
-            <motion.h3
+          {/* <ScrollAnimationWrapper>
+            <h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto"
             >
               Trusted by clients all across the globe.
-            </motion.h3>
-            <motion.p
+            </h3>
+            <p
               className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12"
               variants={scrollAnimation}
             >
-              We have engineers working for clients in all time zones. We provide at least 4 hours of overlapping working hours for client across globe.
-            </motion.p>
+              We have engineers working for clients in all time zones. We
+              provide at least 4 hours of overlapping working hours for client
+              across globe.
+            </p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
-            <motion.div
+            <div
               className="py-12 w-full px-8 mt-16"
               variants={scrollAnimation}
             >
               <Image alt="Logo" src={Maps} className="w-full h-auto" />
-            </motion.div>
-          </ScrollAnimationWrapper>
+            </div>
+          </ScrollAnimationWrapper> */}
         </div>
-        <div className="flex flex-col w-full my-16" id="testimoni">
-          <ScrollAnimationWrapper>
-            <motion.h3
-              variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
-            >
-              Trusted by Thousands of Happy Customer{" "}
-            </motion.h3>
-            <motion.p
-              variants={scrollAnimation}
-              className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
-            >
-              These are the stories of our customers who have joined us with
-              great pleasure when using this crazy feature.
-            </motion.p>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="w-full flex flex-col py-12">
-            <motion.div variants={scrollAnimation}>
+        <div className="flex flex-col w-full " id="testimoni">
+          {/* <ScrollAnimationWrapper> */}
+          {/* <h3
+           
+            className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
+          >
+            Trusted by Thousands of Happy Customer{" "}
+          </h3> */}
+          {/* <p
+            
+            className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
+          >
+            These are the stories of our customers who have joined us with great
+            pleasure when using this crazy feature.
+          </p> */}
+          {/* </ScrollAnimationWrapper> */}
+          {/* commented testimonal */}
+          {/* <ScrollAnimationWrapper className="w-full flex flex-col py-12">
+            <div variants={scrollAnimation}>
               <Testimoni />
-            </motion.div>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="relative w-full mt-16">
-            <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
+            </div>
+          </ScrollAnimationWrapper> */}
+          <div className="relative w-full mb-16">
+            <div>
               <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
                   <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                     Connect with us to explore endless possibilities!
                   </h5>
-                  <p>Let's discuss your requirements and how team Codiesys can help you achieve your goals.</p>
+                  <p>
+                    Let's discuss your requirements and how team Codiesys can
+                    help you achieve your goals.
+                  </p>
                 </div>
-                <ButtonPrimary>Contact US</ButtonPrimary>
+                <Link href={"/contact"}>
+                  <ButtonOutline>Contact Us</ButtonOutline>
+                </Link>
               </div>
               <div
                 className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
                 style={{ filter: "blur(114px)" }}
               ></div>
-            </motion.div>
-          </ScrollAnimationWrapper>
+            </div>
+          </div>
         </div>
       </div>
     </div>

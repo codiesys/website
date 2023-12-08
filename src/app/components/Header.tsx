@@ -122,7 +122,7 @@ const Header = () => {
         <div className="bg-white-500 sm:px-3">
           <ul className="flex w-full justify-between items-center text-black-500">
             <Link
-              href="about"
+              href="/#about"
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "about"
@@ -147,7 +147,7 @@ const Header = () => {
               About
             </Link>
             <Link
-              href="services"
+              href="/#services"
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "services"
@@ -236,7 +236,7 @@ const Header = () => {
               Testimonial
             </LinkScroll> */}
             <Link
-              href="career"
+              href="/#career"
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "career"

@@ -19,30 +19,19 @@ const Pricing = () => {
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full my-16">
-          {/* <ScrollAnimationWrapper> */}
-            <h3
-              // variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto"
-            >
-              Trusted by clients all across the globe.
-            </h3>
-            <p
-              className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12"
-              // variants={scrollAnimation}
-            >
-              We have engineers working for clients in all time zones. We
-              provide at least 4 hours of overlapping working hours for client
-              across globe.
-            </p>
-          {/* </ScrollAnimationWrapper> */}
-          {/* <ScrollAnimationWrapper> */}
-            <div
-              className="py-12 w-full px-8 mt-16"
-              // variants={scrollAnimation}
-            >
-              <Image alt="Logo" src={Maps} className="w-full h-auto" />
-            </div>
-          {/* </ScrollAnimationWrapper> */}
+
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
+            Trusted by clients all across the globe.
+          </h3>
+          <p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12">
+            We have engineers working for clients in all time zones. We provide
+            at least 4 hours of overlapping working hours for client across
+            globe.
+          </p>
+
+          <div className="py-12 w-full px-8 mt-16">
+            <Image alt="Logo" src={Maps} className="w-full h-auto" />
+          </div>
         </div>
       </div>
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
@@ -69,6 +58,7 @@ const Pricing = () => {
                     alt="Free Plan"
                   />
                 </div> */}
+
                 <p className="text-lg text-black-600 font-medium capitalize my-2 ">
                   React JS / other FE
                 </p>
@@ -104,6 +94,7 @@ const Pricing = () => {
                     alt="Standard Plan"
                   />
                 </div> */}
+
                 <p className="text-lg text-black-600 font-medium capitalize my-2">
                   React Native / iOS / Android
                 </p>
@@ -143,11 +134,14 @@ const Pricing = () => {
                     alt="Standard Plan"
                   />
                 </div> */}
+
                 <p className="text-lg text-black-600 font-medium capitalize my-2">
+
                   Go lang / Backend
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
+
                     0-3 Years experience with backend technologies
                   </li>
                   <li className="relative check custom-list my-2">
@@ -170,6 +164,9 @@ const Pricing = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
+
         <div className="flex flex-col w-full " id="testimoni">
           {/* <ScrollAnimationWrapper> */}
           {/* <h3

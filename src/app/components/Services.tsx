@@ -36,6 +36,7 @@ const Feature = () => {
             <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
               We can help you with
             </h3>
+
             <p className="my-6 text-black-500 ">
               Explore our wide range of services with team that you can trust
               and rely on.

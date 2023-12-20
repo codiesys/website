@@ -1,14 +1,14 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
+  important: true,
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-     
-     boxShadow: {
+    boxShadow: {
       sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
       DEFAULT:
         "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
@@ -20,7 +20,7 @@ const config: Config = {
       "orange-md": "0px 20px 40px -15px rgba(245,56,56,0.81) ",
       none: "none",
     },
-      colors: {
+    colors: {
       transparent: "transparent",
       black: {
         500: "#4F5665",
@@ -44,11 +44,11 @@ const config: Config = {
       },
     },
   },
-   variants: {
+  variants: {
     extend: {
       boxShadow: ["active", "hover"],
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;

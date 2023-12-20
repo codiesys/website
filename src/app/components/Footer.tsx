@@ -5,6 +5,7 @@ import LogoVPN from "../../../public/assets/Logo.png";
 import Facebook from "../../../public/assets/Icon/facebook.svg";
 import Twitter from "../../../public/assets/Icon/twitter.svg";
 import Instagram from "../../../public/assets/Icon/instagram.svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -38,19 +39,24 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
           <p className="text-black-600 mb-4 font-medium text-lg">Quick Links</p>
           <ul className="text-black-500">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              About Us{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Career{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Services{" "}
-            </li>
-
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+            <Link href={"/"}>
+              <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+                About Us{" "}
+              </li>
+            </Link>
+            <Link href={"/#career"}>
+              <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+                Career{" "}
+              </li>
+            </Link>
+            <Link href={"/#services"}>
+              <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+                Services{" "}
+              </li>
+            </Link>
+            {/* <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               Privacy Policy{" "}
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">

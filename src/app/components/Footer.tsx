@@ -63,7 +63,7 @@ const Footer = () => {
           <p className="text-black-600 mb-4 font-medium text-lg">Location</p>
           <ul className="text-black-500">
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Hinjewadi Pune{" "}
+              Office 206, 11 cowork, 1st floor, Future one, above SVC bank, DP road, Aundh, Pune{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               contact@codiesys.com

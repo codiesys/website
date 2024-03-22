@@ -15,7 +15,7 @@ const listTestimoni = [
     country: "Poland",
     rating: "4.5",
     testimoni:
-      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. Codiesys Software PVT LTD always the best",
+      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. Codiesys Softwares PVT LTD always the best",
   },
   {
     name: "iezh Robert",
@@ -24,7 +24,7 @@ const listTestimoni = [
     country: "Poland",
     rating: "4.5",
     testimoni:
-      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. Codiesys Software PVT LTD always the best",
+      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. Codiesys Softwares PVT LTD always the best",
   },
   {
     name: "iezh Robert",
@@ -33,7 +33,7 @@ const listTestimoni = [
     country: "Poland",
     rating: "4.5",
     testimoni:
-      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. Codiesys Software PVT LTD always the best",
+      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. Codiesys Softwares PVT LTD always the best",
   },
   {
     name: "iezh Robert",
@@ -42,7 +42,7 @@ const listTestimoni = [
     country: "Poland",
     rating: "4.5",
     testimoni:
-      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. Codiesys Software PVT LTD always the best",
+      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. Codiesys Softwares PVT LTD always the best",
   },
 ];
 const Testimoni = () => {

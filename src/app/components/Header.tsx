@@ -1,8 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../components/misc/ButtonOutline";
-import LogoVPN from "../../../public/assets/Logo.svg";
+import LogoVPN from "../../../public/assets/Logo.png";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -24,18 +23,18 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-            <Image src={LogoVPN} alt="Website Logo" />
+            <Link href={"/"}>
+              <Image src={LogoVPN} width={50} height={50} alt="Website Logo" />
+            </Link>
+            <Link href={"/"}>
+              <span style={{ fontSize: 24, fontWeight: 700, paddingLeft: 5 }}>
+                CodieSYS
+              </span>
+            </Link>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
-            <LinkScroll
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("about");
-              }}
+            <Link
+              href={"/#about"}
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "about"
@@ -44,16 +43,9 @@ const Header = () => {
               }
             >
               About
-            </LinkScroll>
-            <LinkScroll
-              activeClass="active"
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("services");
-              }}
+            </Link>
+            <Link
+              href="/#services"
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "services"
@@ -62,8 +54,8 @@ const Header = () => {
               }
             >
               Services
-            </LinkScroll>
-            <LinkScroll
+            </Link>
+            {/* <LinkScroll
               activeClass="active"
               to="team"
               spy={true}
@@ -98,16 +90,9 @@ const Header = () => {
               }
             >
               Testimonial
-            </LinkScroll>
-            <LinkScroll
-              activeClass="active"
-              to="career"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("career");
-              }}
+            </LinkScroll> */}
+            <Link
+              href="/#career"
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "career"
@@ -116,7 +101,7 @@ const Header = () => {
               }
             >
               Career
-            </LinkScroll>
+            </Link>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             {/* <Link
@@ -136,15 +121,8 @@ const Header = () => {
       <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t ">
         <div className="bg-white-500 sm:px-3">
           <ul className="flex w-full justify-between items-center text-black-500">
-            <LinkScroll
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("about");
-              }}
+            <Link
+              href="/#about"
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "about"
@@ -167,16 +145,9 @@ const Header = () => {
                 />
               </svg>
               About
-            </LinkScroll>
-            <LinkScroll
-              activeClass="active"
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("services");
-              }}
+            </Link>
+            <Link
+              href="/#services"
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "services"
@@ -199,8 +170,8 @@ const Header = () => {
                 />
               </svg>
               Services
-            </LinkScroll>
-            <LinkScroll
+            </Link>
+            {/* <LinkScroll
               activeClass="active"
               to="team"
               spy={true}
@@ -263,16 +234,9 @@ const Header = () => {
                 />
               </svg>
               Testimonial
-            </LinkScroll>
-            <LinkScroll
-              activeClass="active"
-              to="career"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("career");
-              }}
+            </LinkScroll> */}
+            <Link
+              href="/#career"
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "career"
@@ -295,7 +259,7 @@ const Header = () => {
                 />
               </svg>
               Career
-            </LinkScroll>
+            </Link>
           </ul>
         </div>
       </nav>

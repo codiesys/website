@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import Feature from "./components/Services";
 import Hero from "./components/Hero";

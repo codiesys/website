@@ -2,11 +2,14 @@
   "name": "codiesys-software",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://codiesys.github.io/website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
   },
   "dependencies": {
     "@types/react-scroll": "^1.8.10",
